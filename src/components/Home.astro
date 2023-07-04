@@ -1,0 +1,58 @@
+<astro:head>
+  <title>FinEdge | Home</title>
+</astro:head>
+
+<astro:html lang="en">
+  <main>
+    <section class="home-section" id="home">
+      <div class="home-content">
+        <h1>Welcome to FinEdge</h1>
+        <p>Transforming cross-border payments with cutting-edge fintech solutions.</p>
+      </div>
+    </section>
+    
+    <!-- Rest of the sections -->
+  </main>
+</astro:html>
+
+<style>
+  .home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('https://www.perforce.com/sites/default/files/image/2019-06/software%20integrity%20blog.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }
+  
+  .home-content {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .home-content {
+      padding: 1rem;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+    }
+    
+    p {
+      font-size: 1.2rem;
+    }
+  }
+</style>

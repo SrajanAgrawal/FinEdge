@@ -1,0 +1,86 @@
+<astro>
+    <section class="contact-section" id="contact">
+      <div class="contact-content">
+        <h2>CONTACT US</h2>
+        <form action=mailto:srajangarg8273@gmail.com?subject="feedback">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+  
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+  
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  
+    <style>
+      .contact-section {
+        opacity: 0.6;
+        /* background-color: #00b7f6; */
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 2rem;
+        text-align: center;
+      }
+  
+      .contact-content {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+  
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+      }
+  
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      label {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      input,
+      textarea {
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        width: 100%;
+      }
+  
+      textarea {
+        resize: vertical;
+      }
+  
+      button {
+        background-color: #333;
+        color: #fff;
+        padding: 0.7rem 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: background-color 0.3s ease;
+      }
+  
+      button:hover {
+        background-color: black;
+        border: 0.5px solid #0056b3;
+        /* font-size: 1.3rem; */
+      }
+  
+      @media (max-width: 768px) {
+        .contact-content {
+          padding: 1rem;
+        }
+      }
+    </style>
+  </astro>
+  
