@@ -78,34 +78,7 @@ import myFunction from './script';
         }
       }
     }
-    // function myFunction() {
-    //   console.log('start');
-    //   var x = document.getElementById("myTopnav");
-    //   if(x!=null){
-    //   if (x.className === "topnav") {
-    //       console.log('medium');
-    //       x.className += " responsive";
-    //   } else {
-    //       console.log('medium2');
-    //       x.className = "topnav";
-    //   }
-    //   }
-    //   console.log('end'); 
-    // }
-    const button = document.getElementById('ham');
-    button.addEventListener('click', () => myFunction() {
-      const x = document.getElementById("myTopnav");
-      if (x !== null) {
-        if (x.className === "topnav") {
-          console.log('medium');
-          x.className += " responsive";
-        } else {
-            console.log('medium2');
-            x.className = "topnav";
-        }
-      }
-    });
-    
+ 
 
 </script>
  
@@ -115,7 +88,7 @@ import myFunction from './script';
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#contact">Contact</a>
-    <a id='ham' href="javascript:void(0);" class="icon">
+    <a id='ham' href="javascript:void(0);" class="icon" onClick="myFunction()">
         <i class="fa fa-bars"></i> 
     </a> 
   </div>
